@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@id/etusername"
+        style="@style/EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/username"
+
+        android:text="aaa" />
+
+    <EditText
+        android:id="@id/etpassword"
+        style="@style/EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:text="bbb" />
+
+    <TextView
+        android:id="@id/tvVerifyFail"
+        style="@style/TextViewSnippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_fail"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etchecksum"
+        style="@style/EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:hint="@string/password"
+        android:inputType="textMultiLine"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>
